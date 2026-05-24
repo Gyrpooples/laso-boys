@@ -134,6 +134,38 @@ html{
     margin-left: 2px;
 }
 
+.image-long {
+    max-height: 240px;
+    max-width: 700px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.image-tall {
+    max-height: 500px;
+    max-width: 700px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.image-square {
+    max-height: 360px;
+    max-width: 700px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.image-inline {
+    display: inline-block;
+    block-size: 1.0rem;
+}
+
+.image-button {
+    display: inline-block;
+    block-size: 1.5rem;
+    align-items: center;
+}
+
 @media all and (max-width: 960px), only screen and (max-device-width: 768px) {
     #base-header-right{
         display: none;

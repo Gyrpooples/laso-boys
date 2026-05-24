@@ -27,6 +27,18 @@ h1{
     margin-bottom: 30px;
 }
 
+h2{
+    font-family: LondrinaSolid-Light, sans-serif;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+h3{
+    font-family: LondrinaSolid-Light, sans-serif;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
 .grass-island{
     background:
         url('../images/cliff/cliff-top-left-corner.png') top left no-repeat,

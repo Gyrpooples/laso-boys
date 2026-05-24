@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../css/tooltip.css" />
+    <link rel="stylesheet" type="text/css" href="../css/globalStyles.css" />
+    <title>Hollow Knight Guide</title>
+    <link rel="stylesheet" type="text/css" href="../css/markdown.css" />
+</head>
+<body>
+    <main>
+
+        <link rel="stylesheet" type="text/css" href="../css/grass.css" />
+        <link rel="stylesheet" type="text/css" href="../css/base.css" />
+        <script type="application/ecmascript" src="../js/baseHeader.js"></script>
+
+        <header id="base-header">
+            <div id="base-header-left">
+                <a href="../index.html" id="site-title">
+                    <img id="header-logo" src="../images/header-logo.svg" alt="Archipelago" />
+                </a>
+            </div>
+            <div id="base-header-right">
+                <div id="base-header-popover-text">
+                    <img id="base-header-popover-icon" src="../images/menu/popover.png" alt="Popover Menu" href="Games.html" />
+                    games
+                </div>
+                <div id="base-header-popover-menu">
+                    <a href="DarkSouls3.html">Dark Souls 3</a>
+                    <a href="HollowKnight.html">Hollow Knight</a>
+                    <a href="PokemonEmerald.html">Pokemon Emerald</a>
+                    <a href="SuperMetroid.html">Super Metroid</a>
+                    <a href="Terraria.html">Terraria</a>
+                    <div id="popover-all-games">
+                        <a href="Games.html">All Games</a>
+                    </div>
+                </div>
+                <!-- <a href="html/Troubleshooting.html">troubleshooting</a> -->
+                <a href="CurrentRoom.html">Current Room</a>
+                <a href="Streams.html">Streams</a>
+            </div>
+            <div id="base-header-right-mobile">
+                <a id="base-header-mobile-menu-button" href="#">
+                    <img src="../images/menu/hamburger-menu-icon.png" alt="Menu" />
+                </a>
+            </div>
+            <div id="base-header-mobile-menu">
+                <a href="Games.html">games</a>
+                <a href="CurrentRoom.html">Room</a>
+                <a href="Streams.html">Streams</a>
+            </div>
+        </header>
+
+        <div class="markdown">
+            <h1>Hollow Knight Setup Guide</h1>
+            <h2>Requirements</h2>
+                <ul>
+                    <li>
+                        <a href="https://themulhima.github.io/Lumafly/">Lumafly</a>
+                    </li>
+                    <li>
+                        <a href="https://store.steampowered.com/app/367520/Hollow_Knight/">Hollow Knight </a>
+                        on steam
+                    </li>
+                </ul>
+
+            <h2>Backing up saves (optional)</h2>
+                <p>
+                    It shouldn't be necessary but to backup your saves:
+                </p>
+                <ol>
+                    <li>Open windows bar and type %appdata%</li>
+                    <li>
+                        This will open your roaming folder so go up one folder level by clicking AppData
+                        <img class="image-inline" src="../images/Guide/AppDataRoaming.png" alt="AppData" />
+                        or using the 
+                        <img class="image-inline" src="../images/Guide/FolderUpNavigate.png" alt="Navigate up" />
+                        button.
+                    </li>
+                    <li>
+                        Navigate to LocalLow > Team Cherry > Hollow Knight
+                        <img class="image-long" src="../images/HollowKnight/SaveFileLocation.png" alt="Save file location" />
+                    </li>
+                    <li>Save all the files in here to some other location on your computer as a backup</li>
+
+                </ol>
+                
+            <h2>Installing Archipelago mod on Lumafly</h2>
+                <ol>
+                    <li>
+                        Go to the 
+                        <a href="https://themulhima.github.io/Lumafly/">Lumafly </a>
+                        website and select
+                        <img class="image-inline" src="../images/HollowKnight/LumaflyDownload.png" alt="Lumafly download" />
+                    </li>
+                    <li>
+                        Run Lumafly.exe and it will prompt you to confirm the Hollow Knight filepath <br />
+                        Note: It should autofind it but if not you will need to point Lumafly to your install folder.
+                    </li>
+                    <li>
+                        Go to the 
+                        <a href="https://themulhima.github.io/Lumafly/commands/download/?mods=Archipelago/Archipelago%20Map%20Mod/RecentItemsDisplay/DebugMod/RandoStats/Additional%20Timelines/CompassAlwaysOn/AdditionalMaps/">
+                            Archipelago Randomizer Modpack 
+                        </a>
+                        install page and you will see a pop-up asking to open the link with Lumafly <br/>
+                        <img class="image-long" src="../images/HollowKnight/ArchiModInstall.png" alt="Archi mod install" />
+                    </li>
+                    <li>
+                        Click into that box and then after a second the link will light up and you can select "Open Link"
+                    </li>
+                    <li>
+                        Allow Lumafly to run the commands <br/>
+                        <img class="image-long" src="../images/HollowKnight/LumaflyCommands.png" alt="Allow Lumafly to run commands" />
+                    </li>
+                    <li>
+                        Now you're all set on installing. Once it's time to play open Lumafly and select "Launch Modded Game"
+                    </li>
+                </ol>
+
+            <h2>Setting up your randmoizer config (YAML SETUP)</h2>
+                <h3>What is a YAML?</h3>
+                <p>
+                    YAML is just the config file that will tell the Archipelago mod all settings to randomize or change for your game.
+                    The host of your game (probably Bert) will need a YAML file from each player in order to generate the multi-world.
+                </p>
+                <h3>How do I set it up?</h3>
+                <ol>
+                    <li>
+                        Go to the official 
+                        <a href="https://archipelago.gg/games/Hollow%20Knight/player-options">options page </a>
+                        for Hollow Knight
+                    </li>
+                    <li>
+                        Enter a Player Name. This doesn't need to be your in-game name, it just needs to be unique to our other worlds 
+                        (so don't call it Edwin if you are playing with him too)
+                    </li>
+                    <li>
+                        Select whatever settings you want. You can make it as easy or hard as you want here. <br/>
+                        Note: HIGHLY encouraged to read the recommended options section before changing "Progression Balancing"
+                    </li>
+                    <li>
+                        Scroll to the bottom and export your YAML based on your gametype
+                        <ul>
+                            <li>For multi-worlds select
+                                <img class="image-button" src="../images/Guide/ExportOptions.png" alt="Export Options" />
+                            </li>
+                            <li>For single-player you can generate your game using 
+                                <img class="image-button" src="../images/Guide/GenSinglePlayer.png" alt="Gen single-player" />
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        If playing a multi-world send your YAML file to whoever is hosting your game.
+                    </li>
+                </ol>
+                <h3>Recommended Options</h3>
+                <p>
+                    This section is designed for non-experts at Hollow Knight to help make sure they don't build a 
+                    randomizer that requires speedrunner knowledge to beat. <br />
+                    You can also hover over the (?) on the options page for details on any of the settings, 
+                    these are just some notes on the important ones.
+                </p>
+                <ul>
+                    <li>
+                        <strong>Progression Balancing</strong>
+                        <ul>
+                            <li>
+                                This slider basically determines how quickly you get "major" checks. 
+                                I highly recommend leaving at 50 but if you want to progress in your game a little more quickly you can increase it slightly.
+                                e.g. Setting to 99 caused a DS3 run to have all lord souls within the first hour of the run (boring).
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Accessibility</strong>
+                        <ul>
+                            <li>
+                                Recommend leaving at Full unless you know a bunch of sequence breaks/tricks and are really good at combat.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Goal</strong>
+                        <ul>
+                            <li>
+                                Recommend leaving at Any so you don't have to worry about RNG locking your required ending behind a bunch of checks.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Grub Hunt Goal</strong>
+                        <ul>
+                            <li>
+                                Recommend lowering this to at least 40, 
+                                otherwise could get stuck needing everyone else to 100% their games to get your completion.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Randomize Grubs</strong>
+                        <ul>
+                            <li>
+                                Definitely recommend to enable this (disabled by default) if grubs is a win option for you.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Randomize Nail</strong>
+                        <ul>
+                            <li>
+                                A really funny one but probably not recommended for a first playthrough as you could play 
+                                significant portions of the game with only being able to swipe in one direction if at all.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Options from <strong>Precise Movement</strong> to <strong>Difficult Skips</strong>
+                        <ul>
+                            <li>
+                                All of these options add sequence break or difficult tricks into the logic of the game so do 
+                                not enable them unless you know how to do said trick.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Death Link</strong>
+                        <ul>
+                            <li>
+                                I mean c'mon. Yes.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Deathlink Shade Handling</strong>
+                        <ul>
+                            <li>
+                                <strong>HIGHLY</strong> recommend "Shade" option as it will mean you only lose geo on your on deaths but 
+                                deathlink still spawns a shade. If you want to prevent any potential geo loss from deathlink 
+                                select "Shadeless" instead. Don't do "Vanilla" unless you really trust your friends to not die 
+                                or if you just plan on never having money.
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <h2>joining an archipelago game</h2>
+                <ol>
+                    <li>Start the game after installing all necessary mods.</li>
+                    <li>Create a <strong>new save game.</strong></li>
+                    <li>Select the <strong>Archipelago</strong> game mode from the mode selection screen.</li>
+                    <li>
+                        If Bert is hosting go to the 
+                        <a href="CurrentRoom.html">Current Room </a>
+                        to find the server settings to enter.
+                        Otherwise ask your host for the settings.
+                    </li>
+                    <li>Hit <strong>Start</strong> to begin the game. The game will stall for a few seconds while it does all item placements.</li>
+                    <li>The game will immediately drop you into the randomized game.
+                </ol>
+        
+        </div>
+
+    </main>
+    
+</body>
+</html>
