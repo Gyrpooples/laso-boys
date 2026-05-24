@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../css/tooltip.css" />
+    <link rel="stylesheet" type="text/css" href="../css/globalStyles.css" />
+    <title>Dark Souls III Guide</title>
+    <link rel="stylesheet" type="text/css" href="../css/markdown.css" />
+</head>
+<body>
+    <main>
+
+        <link rel="stylesheet" type="text/css" href="../css/grass.css" />
+        <link rel="stylesheet" type="text/css" href="../css/base.css" />
+        <script type="application/ecmascript" src="../js/baseHeader.js"></script>
+
+        <header id="base-header">
+            <div id="base-header-left">
+                <a href="../index.html" id="site-title">
+                    <img id="header-logo" src="../images/header-logo.svg" alt="Archipelago" />
+                </a>
+            </div>
+            <div id="base-header-right">
+                <div id="base-header-popover-text">
+                    <img id="base-header-popover-icon" src="../images/menu/popover.png" alt="Popover Menu" href="Games.html" />
+                    games
+                </div>
+                <div id="base-header-popover-menu">
+                    <a href="DarkSouls3.html">Dark Souls 3</a>
+                    <a href="HollowKnight.html">Hollow Knight</a>
+                    <a href="PokemonEmerald.html">Pokemon Emerald</a>
+                    <a href="SuperMetroid.html">Super Metroid</a>
+                    <a href="Terraria.html">Terraria</a>
+                    <div id="popover-all-games">
+                        <a href="Games.html">All Games</a>
+                    </div>
+                </div>
+                <!-- <a href="html/Troubleshooting.html">troubleshooting</a> -->
+                <a href="CurrentRoom.html">Current Room</a>
+                <a href="Streams.html">Streams</a>
+            </div>
+            <div id="base-header-right-mobile">
+                <a id="base-header-mobile-menu-button" href="#">
+                    <img src="../images/menu/hamburger-menu-icon.png" alt="Menu" />
+                </a>
+            </div>
+            <div id="base-header-mobile-menu">
+                <a href="Games.html">games</a>
+                <a href="CurrentRoom.html">Room</a>
+                <a href="Streams.html">Streams</a>
+            </div>
+        </header>
+
+        <div class="markdown">
+            <h1>Dark Souls Setup Guide</h1>
+            <h2>Requirements</h2>
+                <ul>
+                    <li>
+                        <a href="https://store.steampowered.com/app/374320/DARK_SOULS_III/">Dark Souls III </a>
+                        on steam
+                    </li>
+                    <li>
+                        <a href="https://github.com/fswap/from-software-archipelago-clients/releases?q=dark+souls+iii&expanded=true">
+                            Dark Souls III AP Client
+                        </a>
+                    </li>
+                </ul>
+
+            <h2>Optional Software</h2>
+                <ul>
+                    <li>
+                        <a href="https://github.com/TVV1GK/DS3_AP_Maptracker">Map Tracker</a>
+                    </li>
+                </ul>
+
+            <h2>Backing up saves (optional)</h2>
+                <p>
+                    It shouldn't be necessary but to backup your saves:
+                </p>
+                <ol>
+                    <li>Open windows bar and type %appdata%</li>
+                    <li>
+                        Navigate to DarkSoulsIII > [user_id]
+                    </li>
+                    <li>Save all the files in here to some other location on your computer as a backup</li>
+                </ol>
+                
+            <h2>Downloading Dark Souls III AP Client</h2>
+                <ol>
+                    <li>
+                        Go to the Dark Souls III 
+                        <a href="https://github.com/fswap/from-software-archipelago-clients/releases?q=dark+souls+iii&expanded=true">AP Client  </a>
+                        website and scroll down slightly until you see <br />
+                        <img class="image-long" src="../images/DarkSouls3/APClient.png" alt="AP Client download" />
+                    </li>
+                    <li>
+                        Download the most recent Windows zip version <br />
+                        <img class="image-long" src="../images/DarkSouls3/APClientZip.png" alt="AP Client download" />
+                    </li>
+                    <li>
+                        Unzip the download anywhere. It will auto-locate DS3 in your steam folder.
+                    </li>
+                </ol>
+
+            <h2>Setting up your randmoizer config (YAML SETUP)</h2>
+                <h3>What is a YAML?</h3>
+                <p>
+                    YAML is just the config file that will tell the Archipelago mod all settings to randomize or change for your game.
+                    The host of your game (probably Bert) will need a YAML file from each player in order to generate the multi-world.
+                </p>
+                <h3>How do I set it up?</h3>
+                <ol>
+                    <li>
+                        Go to the official 
+                        <a href="https://archipelago.gg/games/Dark%20Souls%20III/player-options">options page </a>
+                        for Hollow Knight
+                    </li>
+                    <li>
+                        Enter a Player Name. This doesn't need to be your in-game name, it just needs to be unique to our other worlds 
+                        (so don't call it Edwin if you are playing with him too)
+                    </li>
+                    <li>
+                        Select whatever settings you want. You can make it as easy or hard as you want here. <br/>
+                        Note: HIGHLY encouraged to read the recommended options section before changing "Progression Balancing"
+                    </li>
+                    <li>
+                        Scroll to the bottom and export your YAML based on your gametype
+                        <ul>
+                            <li>For multi-worlds select
+                                <img class="image-button" src="../images/Guide/ExportOptions.png" alt="Export Options" />
+                            </li>
+                            <li>For single-player you can generate your game using 
+                                <img class="image-button" src="../images/Guide/GenSinglePlayer.png" alt="Gen single-player" />
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        If playing a multi-world send your YAML file to whoever is hosting your game.
+                    </li>
+                </ol>
+                <h3>Recommended Options</h3>
+                <p>
+                    This section is designed for non-experts at Dark Souls III to help make sure they don't build a 
+                    randomizer that requires SL1-all bosses skill level to beat. <br />
+                    You can also hover over the (?) on the options page for details on any of the settings, 
+                    these are just some notes on the important ones.
+                </p>
+                <ul>
+                    <li>
+                        <strong>Progression Balancing</strong>
+                        <ul>
+                            <li>
+                                This slider basically determines how quickly you get "major" checks. 
+                                I highly recommend leaving at 50 but if you want to progress in your game a little more quickly you can increase it slightly.
+                                e.g. Setting to 99 caused a DS3 run to have all lord souls within the first hour of the run (boring).
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Accessibility</strong>
+                        <ul>
+                            <li>
+                                Recommend leaving at Full unless you know a bunch of sequence breaks/tricks and are really good at combat.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Early Small Lothric Banner</strong>
+                        <ul>
+                            <li>
+                                Probably best to enable this to make sure you don't get BK'd immediately.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Late Basin of Vows</strong>
+                        <ul>
+                            <li>
+                                Personally I'd leave off because its a randomizer so going to lothric early shouldn't 
+                                really give you an advantage. Especially with auto-equip.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Death Link</strong>
+                        <ul>
+                            <li>
+                                I mean c'mon. Yes.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Enable NG+</strong>
+                        <ul>
+                            <li>
+                                I mean if you really want to make the run go on forever but I know even you (Brandon) 
+                                don't remember all the +3 ring locations.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Auto Equip</strong>/<strong>Lock Equipment Slots</strong>
+                        <ul>
+                            <li>
+                                There is really two ways to do this and still have fun:
+                                <ul>
+                                    <li>
+                                        Locked auto-equip - You won't be able to change any of your equipment.
+                                        Once you (or another world) picks something up it stays on. <br />
+                                        If doing this I <strong>HIGHLY</strong> recommend enabling <strong>No Equip Load</strong> 
+                                        and <strong>No Weapon Requirements</strong> so you won't be fat rolling with a 4 base damage
+                                        weapon the whole game. <br />
+                                        Good luck ever using an upgraded weapon.
+                                    </li>
+                                    <li>
+                                        Unlocked auto-equip - You can change your equipment but you might get screwed in a boss fight 
+                                        when suddenly you're fat rolling because someone just gave you the pursuer shield. Less difficult 
+                                        than locked but also less fun imo. If doing this one keep the equip load and weapon requirements enabled.
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Randomize Weapon Level</strong>
+                        <ul>
+                            <li>
+                                This one should really only be enabled if you are playing locked auto-equip. 
+                                Good way to make the game a little easier by making sure you aren't using an unleveled weapon the whole run.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Missable Locations Behavior</strong>
+                        <ul>
+                            <li>
+                                Please keep at either "Forbid Useful" or "Do not Randomize" because if I never get grapple beam cuz you 
+                                accidentally hit Siegward while fighting the demon I'll be pissed.
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <h2>joining an archipelago game</h2>
+                <h3>First-Time Setup</h3>
+                <ol>
+                    <li>Open your unzipped AP Client folder and run <code>randomizer\DS3Randomizer.exe</code>.</li>
+                    <li>
+                        If Bert is hosting go to the 
+                        <a href="CurrentRoom.html">Current Room </a>
+                        to find the server settings to enter,
+                        otherwise get fucked.
+                    </li>
+                    <li>
+                        Enter the room address (usually something like <code>archipelago.gg:12345</code>), your player name, 
+                        and your password if there is one.
+                    </li>
+                    <li>Click "Load" to randomize. This will take a couple minutes.</li>
+                </ol>
+                <h3>Running and Connecting the Game</h3>
+                <ol>
+                    <li>Launch DS3 through steam and make sure to set "Start in Offline Mode" setting to prevent you 
+                        from being banned for playing with mods.</li>
+                    <li>Close DS3 but keep steam running (so invaders don't break).</li>
+                    <li>
+                        Run <code>launch-ds3.bat</code> which should open DS3 and a command prompt 
+                        for interacting with the Archipelago server.
+                    </li>
+                    <li>
+                        Make your character or load an existing run if you already went through character creation for this archipelago world. 
+                        You should see an "Archipelago connected" message once you have control of your character.
+                    </li>
+                </ol>
+
+            <h2>Map Tracker Setup</h2>
+            <p>
+                I don't know Brandon. Didn't have time to make this guide but if you suck at DS3 and need a tracker you can 
+                <a href="https://github.com/TVV1GK/DS3_AP_Maptracker">figure it out </a>
+                yourself bud.
+            </p>
+        </div>
+
+    </main>
+    
+</body>
+</html>

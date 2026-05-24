@@ -20,12 +20,12 @@
 
 @font-face{
     font-family: LondrinaSolid-Regular;
-    src: url("../../static/static/fonts/LondrinaSolid-Regular.ttf");
+    src: url("../fonts/LondrinaSolid-Regular.ttf");
 }
 
 @font-face{
     font-family: LondrinaSolid-Light;
-    src: url("../../static/static/fonts/LondrinaSolid-Light.ttf");
+    src: url("../fonts/LondrinaSolid-Light.ttf");
 }
 
 html{
